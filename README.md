@@ -129,7 +129,7 @@ csv-bridge/
 Clone the repository and install all dependencies from the root:
 
 ```bash
-git clone https://github.com/<your-username>/csv-bridge.git
+git clone https://github.com/ayushgujran-stack/csv-bridge.git
 cd csv-bridge
 npm install
 ```
