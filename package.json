@@ -1,0 +1,18 @@
+{
+  "name": "csv-bridge-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "csv-bridge"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=csv-bridge && npm run build --workspace=csv-bridge-web",
+    "build:package": "npm run build --workspace=csv-bridge",
+    "build:app": "npm run build --workspace=csv-bridge-web",
+    "dev:app": "npm run dev --workspace=csv-bridge-web",
+    "dev:package": "npm run dev --workspace=csv-bridge",
+    "lint": "npm run lint --workspace=csv-bridge-web"
+  }
+}

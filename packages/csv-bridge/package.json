@@ -1,0 +1,49 @@
+{
+  "name": "csv-bridge",
+  "version": "0.1.0",
+  "description": "A lightweight, drop-in React component for CSV importing with built-in webhook support and secure API handling.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "csv",
+    "importer",
+    "react",
+    "nextjs",
+    "webhook",
+    "data-import",
+    "papaparse"
+  ],
+  "author": "Ayush Rajesh Poojary",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "csv-bridge": "^0.1.0",
+    "papaparse": "^5.5.2"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0"
+  }
+}
