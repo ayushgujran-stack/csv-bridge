@@ -14,5 +14,9 @@
     "dev:app": "npm run dev --workspace=csv-bridge-web",
     "dev:package": "npm run dev --workspace=csv-bridge",
     "lint": "npm run lint --workspace=csv-bridge-web"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^7.0.2"
   }
 }

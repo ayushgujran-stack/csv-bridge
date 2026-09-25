@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && tsc --emitDeclarationOnly --outDir dist --declaration",
     "dev": "tsup --watch",
     "prepublishOnly": "npm run build"
   },
